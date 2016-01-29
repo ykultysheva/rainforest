@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
+
+
+
   resources :products
   resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :create, :destroy]
   #
   # get "products" => "products#index"
   # post "products" => "products#create"
